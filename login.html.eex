@@ -1,0 +1,16 @@
+<!-- lib/calci_api_web/templates/session/login.html.eex -->
+
+<div class="login-form">
+  <h2>Login</h2>
+  <%= form_for @conn, session_path(@conn, :create), [as: :session], fn f -> %>
+    <div class="form-group">
+      <%= text_input f, :username, placeholder: "Username" %>
+    </div>
+    <div class="form-group">
+      <%= password_input f, :password, placeholder: "Password" %>
+    </div>
+    <div class="form-group">
+      <%= submit "Login" %>
+    </div>
+  <% end %>
+</div>

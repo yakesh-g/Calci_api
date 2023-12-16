@@ -1,0 +1,2 @@
+<h1>Registration</h1>
+<%= render "form.html", changeset: @changeset, action: registration_path(@conn, :create) %>
